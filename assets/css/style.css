@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction:row;
-    
+    background-color: #D7CEC7;
 }
 
 .header-img{
@@ -67,6 +67,77 @@
 }
 
 
+#services-container{
+    display: flex;
+ justify-content: space-evenly;
+ background-color: #D7CEC7;
+
+}
+#services h1{
+    text-align: center;
+    font-size: 32px;
+ 
+ }
+
+ #services ul {
+    flex-direction: column;
+    padding: 5px;
+    height: auto;
+    
+
+} 
+
+.services-lists{
+    border: 2px;
+    border-style: solid;
+    text-align: center;
+    width: 25%;
+    height: auto;
+}
+.services-lists li {
+    
+   flex-grow: 1;
+   list-style-type: none;
+   padding: 4px;
+   font-size: 125%;
+   background-color: #D7CEC7;
+
+   
+  }
+
+  .services-lists h2{
+    background: #565656;
+  }
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 16px;
+    
+
+   
+   
+  }
+ .button:hover {
+    background-color: #3e8e41;
+  }
+
+  .social-networks{
+
+    display: flex;
+    font-size: 175%;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+  }
+
+
+  
 
 /* For medium screens sizes from 750px wide and down */
 @media screen and (max-width: 750px){
@@ -91,16 +162,15 @@
 
 
     #services-container{
-    flex-wrap: wrap;
+    
     flex-direction: column;
-   
+    
     
     }
     .services-lists{
-        border: 4px;
-        border-style: solid;
-        flex-grow: 1 ;
 
+        width: 100%;
+        
         
     }
     #services ul,h2 {
@@ -109,36 +179,3 @@
     } 
 
 }
-#services-container{
-    display: flex;
- justify-content: space-evenly;
-
-}
-#services h1{
-    text-align: center;
-    font-size: 32px;
- 
- }
-
- #services ul {
-    flex-direction: column;
-    padding: 5px;
-    height: auto;
-} 
-
-.services-lists{
-    border: 2px;
-    border-style: solid;
-    text-align: center;
-    width: 25%;
-    
-}
-li {
-    
-   
-   flex-grow: 1;
-   list-style-type: none;
-   padding: 4px;
-   font-size: 125%;
-
-  }
