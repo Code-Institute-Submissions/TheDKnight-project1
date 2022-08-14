@@ -137,7 +137,25 @@
   }
 
 
-  
+  #gallery-container{
+display: flex;
+flex-wrap: wrap;
+max-width: 1800px;
+flex-grow: 1;
+
+  }
+
+
+
+  #gallery-container img{
+    
+    display: flex;
+    margin: 10px;
+    border: 3px solid #000;
+    max-height: 300px;
+    max-width: 300px;
+   
+  }
 
 /* For medium screens sizes from 750px wide and down */
 @media screen and (max-width: 750px){
