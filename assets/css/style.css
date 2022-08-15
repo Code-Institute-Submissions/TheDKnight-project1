@@ -140,6 +140,7 @@
   #gallery-container{
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
 max-width: 1800px;
 flex-grow: 1;
 
@@ -152,10 +153,41 @@ flex-grow: 1;
     display: flex;
     margin: 10px;
     border: 3px solid #000;
-    max-height: 300px;
-    max-width: 300px;
-   
+    max-height: 500px;
+    max-width: 500px;
+
   }
+
+
+  #contact-form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+  /* sets both to space-between */
+    
+    
+  }
+  #contact-form{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    width: 500px;
+    padding: 5px;
+  }  
+  
+  #contact-form input,textarea{
+display: flex;
+flex-direction: column;
+width: 400px;
+padding: 6px;
+  }
+
+  #contact-form label{
+    font-size: 20px;
+    padding: 4px;
+  }
+
 
 /* For medium screens sizes from 750px wide and down */
 @media screen and (max-width: 750px){
@@ -196,4 +228,23 @@ flex-grow: 1;
         
     } 
 
+    #gallery-container{
+        display: flex;
+        flex-direction: column;
+
+      
+        
+        align-items: center;
+        justify-content: stretch;
+          }
+
+          #gallery-container img{
+    
+            display: flex;
+            margin: 10px;
+            border: 3px solid #000;
+            max-height: 500px;
+            max-width: 500px;
+            
+          }
 }
