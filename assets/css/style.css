@@ -1,15 +1,11 @@
-* { //* is known by wildcard, it selects all elements on the DOM */
-    margin: 0;
-    padding: 0;
-  }
-
 
 
 .flex-header{
     display: flex;
     justify-content: space-between;
     flex-direction:row;
-    background-color: #D7CEC7;
+    background-color: #adafb0;
+    margin-bottom: 5px;
 }
 
 .header-img{
@@ -45,10 +41,12 @@
 
 .navmenu a {
     text-decoration: none;
+    color: #fbe456;
 }
 
 .navmenu a:hover{
     border-bottom: 1px solid #3a3a3a;
+    color: #000;
 }
 
 #hero-outer{
@@ -70,8 +68,8 @@
 #services-container{
     display: flex;
  justify-content: space-evenly;
- background-color: #D7CEC7;
-
+ background-color: #fbe456;
+margin-bottom: 20px;
 }
 #services h1{
     text-align: center;
@@ -100,40 +98,40 @@
    list-style-type: none;
    padding: 4px;
    font-size: 125%;
-   background-color: #D7CEC7;
+  
 
    
   }
 
-  .services-lists h2{
-    background: #565656;
-  }
 
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-flex;
-    font-size: 16px;
-    
 
-   
-   
-  }
  .button:hover {
     background-color: #3e8e41;
   }
 
+  footer{
+    
+   display: flex;
+  flex-wrap: wrap;
+ 
+  background-color: #adafb0;
+row-gap: 0;
+     
+    }
   .social-networks{
 
     display: flex;
-    font-size: 175%;
+    width: 100%;
+  
     justify-content: space-evenly;
+    font-size: 175%;
     list-style-type: none;
-
+    
+  }
+  #copyright{
+    width: 100%;
+  text-align: center;
+ 
   }
 
 
@@ -172,15 +170,22 @@ flex-grow: 1;
     display: flex;
     justify-content: center;
     margin: 5px;
-    width: 500px;
-    padding: 5px;
+    width: 700px;
+    
   }  
   
   #contact-form input,textarea{
 display: flex;
 flex-direction: column;
 width: 400px;
-padding: 6px;
+margin: 5px;
+padding: 5px;
+  }
+
+ 
+  .submit{
+    max-width: 60px;
+    background-color: #fbe456;
   }
 
   #contact-form label{
@@ -188,9 +193,10 @@ padding: 6px;
     padding: 4px;
   }
 
+  
 
-/* For medium screens sizes from 750px wide and down */
-@media screen and (max-width: 750px){
+/* For medium screens sizes from 760px wide and down */
+@media screen and (max-width: 760px){
 
     .flex-header{
         display: flex;
@@ -227,13 +233,13 @@ padding: 6px;
  text-align: center;
         
     } 
+    
 
+    
+    
     #gallery-container{
         display: flex;
         flex-direction: column;
-
-      
-        
         align-items: center;
         justify-content: stretch;
           }
@@ -247,4 +253,122 @@ padding: 6px;
             max-width: 500px;
             
           }
+
+          #contact-form-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+          }
+            
+          #contact-form{
+            display: flex;
+            justify-content: center;
+            margin: 5px;
+            max-width: 700px;
+            padding: 5px;
+            width: 100%;
+          }  
+          
+          #contact-form input,textarea{
+          display: flex;
+          flex-direction: column;
+          width: 500px;
+          margin: 5px;
+          }
+          
+          #contact-form label{
+            
+            margin: 4px;
+          }
+          
+          .gmapf{
+            width: 350px;
+            height: 350px;
+          }
+
+}
+
+
+
+/* For medium screens sizes from 480px wide and down */
+@media screen and (max-width: 480px){
+  .flex-header{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+  
+}
+
+#hero-image{
+  height: 400px;
+  width: 100%;
+  background: url("../images/heroimage.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 0;
+}
+#hero-outer{
+  height: 400px;
+  width: 100%;
+  background: url("../images/heroimage.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 0;
+}
+
+  .navmenu {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .navmenu li {
+    list-style-type: none;
+    margin-right: 50px;
+    font-size: 100%;
+}
+
+#contact-form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+}
+
+#contact-form{
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  width: 500px;
+  padding: 5px;
+}  
+
+#contact-form input,textarea{
+display: flex;
+flex-direction: column;
+width: 350px;
+
+margin: 5px;
+}
+
+#contact-form label{
+  
+  margin: 4px;
+}
+
+.gmapf{
+  width: 350px;
+  height: 350px;
+}
+
+#gallery-container img{
+    
+  display: flex;
+  margin: 10px;
+  border: 3px solid #000;
+  max-height: 300px;
+  max-width: 300px;
+
+}
+
 }
