@@ -114,9 +114,8 @@ footer {
 
   display: flex;
   flex-wrap: wrap;
-
   background-color: #adafb0;
-  row-gap: 0;
+
 
 }
 
@@ -236,7 +235,7 @@ textarea {
 
   }
 
-  #services ul,
+  #services ul
   h2 {
     text-align: center;
 
@@ -382,7 +381,7 @@ textarea {
 
   }
 
-
+}
 
 /* For small screens sizes from 380px wide and down */
 @media screen and (max-width: 380px) {
