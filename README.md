@@ -68,3 +68,80 @@ I created the wire frames below as a plan layout of how my website should look.
 - The contact us form provides a way for the customer to contact the website, it has a first name and last name box, an email box and a text area for writing the subject. It has labels and placeholders.
 - There is an iframe with a google map with a location of cork city on it so they customer knows where the comapany is based.
 <img src="assets/readmeimages/contactus.jpg">
+
+## Testing
+
+### Light House Tests
+
+### Home Page
+<img src="assets/readmeimages/homelighthouse.jpg">
+
+### Gallery Page
+<img src="assets/readmeimages/gallerylighthouse.jpg">
+
+### Contact Us Page 
+<img src="assets/readmeimages/contactuslighthouse.jpg">
+
+
+
+### HTML Testing
+
+- No errors were found during html testings of the three pages.
+
+<img src="assets/readmeimages/htmlhome.jpg">
+<img src="assets/readmeimages/htmlgallery.jpg">
+<img src="assets/readmeimages/htmlcontact.jpg">
+
+
+
+### CSS Testing
+ - No errors were found when passing through the official W3C validator.
+
+<img src="assets/readmeimages/cssstyle.jpg">
+
+Manual Testing
+Desktop
+Mozilla Firefox, Google Chrome, Microsoft Edge: everything is working good. Page loads and all of the page features are working.
+
+Mobile
+Tested with Ipad air, Iphone SE, Galaxy Fold and iPhone 12. It is responsive as intended.
+
+Chrome Dev Tools
+Tested for available devices, webpage works well. It is responsive as intended.
+
+
+## Errors
+- During testing and validation i found an error in the css validator as i was missing a closing tag.
+<img src="assets/readmeimages/error.jpg">
+
+## Deployment 
+- The website was deployed to GitHub pages.
+
+- The steps to deploy are as follows:
+- In the GitHub repository, navigate to the Settings tab;
+- From the source section drop-down menu, select the Master Branch;
+ - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. The live link can be found here.
+### Github
+ https://github.com/TheDKnight/project1
+
+### Github Pages 
+ https://thedknight.github.io/project1/
+
+
+
+ ## Content
+
+
+
+### Media
+- All pictures and images used in this project are from https://pexels.com.
+
+### Resources 
+### Favicon generator. https://favicon.io/
+-I used this side to conevert the logo to the 16x16 size for the favicon.
+
+### W3 Schools https://www.w3schools.com/
+- Used for variety of tutorials and deeper understanding of some important concepts related to both HTML and CSS. 
+
+### Footer Code
+- Love Running sample project footer code - Footer adapted from this code.

@@ -1,29 +1,34 @@
+/*Header Container*/
 .flex-header {
 
- display: flex;
+  display: flex;
   background-color: #adafb0;
   margin-bottom: 5px;
   justify-content: space-between;
 }
 
+/*Logo Imag*/
 .header-img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Logo Size */
 #logo {
   height: 150px;
   width: 250px;
   padding-bottom: 0%;
 }
 
+/* Nav Menu*/
 .navmenu {
   display: flex;
   justify-content: flex-end;
 
 }
 
+/* Nav Menu Unordered List */
 .navmenu ul {
   display: flex;
   flex-wrap: wrap;
@@ -48,6 +53,8 @@
   color: #fbe456;
 }
 
+
+/* Hero Outer Container */
 #hero-outer {
   height: 600px;
   width: 100%;
@@ -56,6 +63,7 @@
 
 }
 
+/* Hero Image Settings */
 #hero-image {
   height: 600px;
   width: 100%;
@@ -64,11 +72,11 @@
 }
 
 
+/* Services Boxes Container */
 #services-container {
   display: flex;
-  
   background-color: #fbe456;
- 
+
 }
 
 #services h1 {
@@ -110,6 +118,8 @@
   background-color: #3e8e41;
 }
 
+/* Footer Container */
+
 footer {
 
   display: flex;
@@ -117,26 +127,28 @@ footer {
   background-color: #adafb0;
 
 
+
 }
 
+/* Footer Social Network Buttons */
 .social-networks {
 
   display: flex;
   width: 100%;
-
   justify-content: space-evenly;
   font-size: 175%;
   list-style-type: none;
 
 }
 
+/* Copyright Settings */
 #copyright {
   width: 100%;
   text-align: center;
 
 }
 
-
+/* Gallery Container */
 #gallery-container {
   display: flex;
   flex-wrap: wrap;
@@ -147,7 +159,7 @@ footer {
 }
 
 
-
+/* Gallery Images */
 #gallery-container img {
 
   display: flex;
@@ -158,17 +170,17 @@ footer {
 
 }
 
-
+/* Contact Form Container */
 #contact-form-container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 5px;
-  /* sets both to space-between */
-
+  height: 65vh;
 
 }
 
+/* Contact Form Style */
 #contact-form {
   display: flex;
   justify-content: center;
@@ -177,6 +189,7 @@ footer {
 
 }
 
+/* Contact Form Boxes */
 #contact-form input,
 textarea {
   display: flex;
@@ -202,14 +215,16 @@ textarea {
   height: 450px;
 }
 
-/* For medium screens sizes from 760px wide and down */
+/* For medium screens sizes from 925px wide and down */
 @media screen and (max-width: 925px) {
 
+  /* Changes the flex container from row to column display */
   #contact-form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    height: auto;
   }
 
   #contact-form {
@@ -237,37 +252,26 @@ textarea {
 @media screen and (max-width: 760px) {
 
   .flex-header {
-
     flex-direction: column;
   }
 
 
   .navmenu {
-    
     justify-content: center;
-   
   }
- 
+
 
 
   #services-container {
-
     flex-direction: column;
-
-
   }
 
   .services-lists {
-
     width: 100%;
-
-
   }
 
-  #services ul
-  h2 {
+  #services ul h2 {
     text-align: center;
-
   }
 
 
@@ -285,7 +289,6 @@ textarea {
     border: 3px solid #000;
     max-height: 500px;
     max-width: 500px;
-
   }
 
 
@@ -294,7 +297,7 @@ textarea {
 
 
 
-/* For medium screens sizes from 480px wide and down */
+/* For medium screens sizes from 550px wide and down */
 @media screen and (max-width: 550px) {
 
 
@@ -338,7 +341,6 @@ textarea {
     display: flex;
     justify-content: center;
     margin: 5px;
-    
     padding: 5px;
   }
 
@@ -347,12 +349,10 @@ textarea {
     display: flex;
     flex-direction: column;
     width: 350px;
-
     margin: 5px;
   }
 
   #contact-form label {
-
     margin: 4px;
   }
 
@@ -368,14 +368,13 @@ textarea {
     border: 3px solid #000;
     max-height: 300px;
     max-width: 300px;
-
   }
 
 }
 
 /* For small screens sizes from 380px wide and down */
 @media screen and (max-width: 380px) {
- 
+
 
   #contact-form {
     display: flex;
@@ -390,12 +389,10 @@ textarea {
     display: flex;
     flex-direction: column;
     width: 250px;
-
     margin: 5px;
   }
 
   #contact-form label {
-
     margin: 4px;
   }
 
@@ -403,6 +400,7 @@ textarea {
     width: 250px;
     height: 350px;
   }
+
   .navmenu li {
     list-style-type: none;
     margin-right: 20px;
