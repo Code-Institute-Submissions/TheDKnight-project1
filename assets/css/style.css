@@ -1,8 +1,9 @@
 .flex-header {
 
- 
+ display: flex;
   background-color: #adafb0;
   margin-bottom: 5px;
+  justify-content: space-between;
 }
 
 .header-img {
@@ -19,7 +20,7 @@
 
 .navmenu {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 
 }
 
@@ -39,12 +40,12 @@
 
 .navmenu a {
   text-decoration: none;
-  color: #fbe456;
+  color: #1a0000;
 }
 
 .navmenu a:hover {
   border-bottom: 1px solid #3a3a3a;
-  color: #000;
+  color: #fbe456;
 }
 
 #hero-outer {
@@ -152,8 +153,8 @@ footer {
   display: flex;
   margin: 10px;
   border: 3px solid #000;
-  max-height: 500px;
-  max-width: 500px;
+  height: 450px;
+  width: 450px;
 
 }
 
@@ -196,6 +197,40 @@ textarea {
   padding: 4px;
 }
 
+.gmapf {
+  width: 450px;
+  height: 450px;
+}
+
+/* For medium screens sizes from 760px wide and down */
+@media screen and (max-width: 925px) {
+
+  #contact-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #contact-form {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    max-width: 700px;
+    padding: 5px;
+    width: 100%;
+  }
+
+  #contact-form input,
+  textarea {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 5px;
+  }
+
+
+}
 
 
 /* For medium screens sizes from 760px wide and down */
@@ -207,7 +242,11 @@ textarea {
   }
 
 
-
+  .navmenu {
+    
+    justify-content: center;
+   
+  }
  
 
 
@@ -249,46 +288,14 @@ textarea {
 
   }
 
-  #contact-form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-  }
 
-  #contact-form {
-    display: flex;
-    justify-content: center;
-    margin: 5px;
-    max-width: 700px;
-    padding: 5px;
-    width: 100%;
-  }
-
-  #contact-form input,
-  textarea {
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    margin: 5px;
-  }
-
-  #contact-form label {
-
-    margin: 4px;
-  }
-
-  .gmapf {
-    width: 350px;
-    height: 350px;
-  }
 
 }
 
 
 
 /* For medium screens sizes from 480px wide and down */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
 
 
   #hero-image {
